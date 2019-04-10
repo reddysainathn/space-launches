@@ -75,15 +75,22 @@
     </script>
 </body>
 <style>
-    .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: black;
-        color: yellow;
-        text-align: center;
-    }
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
 </style>
 <div class="mt-2 col-md-12"></div>
 <div class="footer">

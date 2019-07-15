@@ -41,6 +41,7 @@
                                     <th scope="col">Space Launch Name</th>
                                     <th scope="col">Rocket Name</th>
                                     <th scope="col">Video Streaming URL</th>
+                                    <th scope="col">Location</th>
                                 </tr>
                             </thead>
                             <tbody>   
@@ -54,6 +55,7 @@
                                  <td>${element.name}</td>
                                  <td>${element.rocket.name}</td>
                                  <td>${element.vidURL ? null : 'Not Available!'}</td>
+                                 <td>${element.location.name ? null : 'Not Available!'}</td>
                             </tr>
                             `
                         });

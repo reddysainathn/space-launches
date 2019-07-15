@@ -43,6 +43,7 @@
                                     <th scope="col">Date</th>
                                     <th scope="col">Video Streaming URL</th>
                                     <th scope="col">Location</th>
+                                    <th scope="col">Pad</th>
                                     <th scope="col">Country</th>
                                 </tr>
                             </thead>
@@ -59,6 +60,7 @@
                                  <td>${element.net}</td>
                                  <td>${element.vidURL ? null : 'Not Available!'}</td>
                                  <td>${element.location.name}</td>
+                                 <td>${element.location.pads[0].name}</td>
                                  <td>${element.location.countryCode}</td>
                             </tr>
                             `
